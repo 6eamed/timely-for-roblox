@@ -21,7 +21,7 @@
     End Sub
 
     Private Sub CheckIfRunning()
-        p = Process.GetProcessesByName("Windows10Universal") 'process name
+            p = Process.GetProcessesByName("RobloxPlayerBeta") 'process name
         If p.Count > 0 Then 'if the process is running
             Me.processStatus.Text = "Process: Running" 'change the label
             minutes.Start() 'start the counter
