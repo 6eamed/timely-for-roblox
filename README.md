@@ -8,3 +8,7 @@ Will count the amount of time that Roblox has been open; includes multiple saves
 
 # What is the difference between versions U and R?
 - If you're looking to count time for the Microsoft Store ROBLOX app, use the Universal // U version; otherwise, use the Normal // R version.
+
+# Downloads
+[Microsoft Store Roblox](https://github.com/6eamed/timely-for-roblox/releases/tag/1.0.3.1U)
+[ROBLOX](https://github.com/6eamed/timely-for-roblox/releases/tag/1.0.3.1R)
