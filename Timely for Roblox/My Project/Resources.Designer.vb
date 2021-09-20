@@ -27,11 +27,11 @@ Namespace My.Resources
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
      Global.Microsoft.VisualBasic.HideModuleNameAttribute()>  _
     Friend Module Resources
-
-        Public resourceMan As Global.System.Resources.ResourceManager
-
-        Public resourceCulture As Global.System.Globalization.CultureInfo
-
+        
+        Private resourceMan As Global.System.Resources.ResourceManager
+        
+        Private resourceCulture As Global.System.Globalization.CultureInfo
+        
         '''<summary>
         '''  Returns the cached ResourceManager instance used by this class.
         '''</summary>
@@ -66,6 +66,16 @@ Namespace My.Resources
         Friend ReadOnly Property BAR() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("BAR", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property NFO() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("NFO", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

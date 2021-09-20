@@ -21,9 +21,9 @@
     End Sub
 
     Private Sub CheckIfRunning()
-            p = Process.GetProcessesByName("RobloxPlayerBeta") 'process name
+        p = Process.GetProcessesByName(Form1.whatVersion) 'process name
         If p.Count > 0 Then 'if the process is running
-            Me.processStatus.Text = "Process: Running" 'change the label
+            Me.processStatus.Text = "Process: Running, " & "Version: " & Form1.whatVersion 'change the label
             minutes.Start() 'start the counter
             thisSessionTime.Start() 'start the counter
         Else
@@ -96,4 +96,5 @@
 
         End If
     End Sub
+
 End Class
